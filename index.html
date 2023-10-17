@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soykitty</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="./img/logokity.png" alt="myonlinemeal.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#">Browse Sitters</a></li>
+            <li class="item"><a href="#">Browse Pet-sits</a></li>
+            <li class="item"><a href="#">How It Works</a></li>
+            <li class="item"><a href="#">Resources</a></li>
+        </ul>
+            <a class="btn" href ="Sign_In.html">Sign in</a>
+        <button class="hamburger">
+            <div class="bar">
+
+            </div>
+        </button>
+    </nav>
+    <nav class="mobile-nav">
+        <a href="#">Browse Sitters</a>
+        <a href="#">Browse Pet-sits</a>
+        <a href="#">How It Works</a>
+        <a href="#">Resources</a>
+        <a class="btn3" href="Sign_In.html">Sign in</a>
+    </nav>
+    <section id="home">
+        <div class="main">
+            <h3>Superior odor protection for your home</h3>
+            <p>A premium, nontoxic cat litter made entirely of plant byproducts for eco-conscious cat owners that demand
+                an odor-free household
+                without hurting the planet.
+            </p>
+            <button class="btn1">Join Waitlist</button>
+        </div>
+        <div id="photo">
+            <img src="./img/cat.png" alt="myonlinemeal.com">
+        </div>
+    </section>
+    <section id="below">
+        <img src="./img/Frame 10.png" alt="">
+        <img src="./img/Frame 11.png" alt="">
+        <img src="./img/Frame 12.png" alt="">
+        <img src="./img/Frame 13.png" alt="">
+
+    </section>
+    <section id="home1">
+        <div class="photo1">
+            <img src="./img/cat2.png" alt="">
+        </div>
+        <div class="main1">
+            <h3>Tired of harmful chemical?</h3>
+            <p>A premium, nontoxic cat litter made entirely of plant byproducts for eco-conscious cat owners that
+                demandand order-free household without hurting the plant</p>
+        </div>
+    </section>
+    <section id="below1">
+        <img src="./img/Logo.png" alt="">
+        <img src="./img/Logo (1).png" alt="">
+        <img src="./img/Logo (2).png" alt="">
+        <img src="./img/Logo (3).png" alt="">
+        <img src="./img/Logo (4).png" alt="">
+    </section>
+    <section id="home2">
+        <div id="boxes">
+
+            <div class="box">
+                <h3>We have the perfect Solution for you</h3>
+                <p>A premium, nontoxic cat litter made entirely of plant byproducts for eco-consious cat owners that
+                    demand an order-free household without hurting the planet.</p>
+            </div>
+            <div class="box1">
+                <p>A premium, nontoxic cat litter made entirely of plant byproducts for eco-consious cat owners that
+                    demand an order-free household without hurting the planet.</p>
+            </div>
+        </div>
+        <div id="boxes1">
+            <div class="photo2">
+                <img src="./img/Rectangle 5.png" alt="">
+            </div>
+            <div class="main2">
+                <h3>With Us, Care for your cat and environment</h3>
+                <p>A premium, nontoxic cat litter made entirely of plant byproducts for eco-conscious cat owners that
+                    demandand order-free household without hurting the plant</p>
+            </div>
+        </div>
+    </section>
+    <section id="page4">
+        <div class="main3">
+            <h1>Latest Ongoings</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo aut ipsa a quasi exercitationem hic vero
+                qui accusantium in</p>
+        </div>
+        <div class="boxes2">
+            <div class="img-box">
+                <img src="./img/women.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis velit sequi culpa.</p>
+            </div>
+            <div class="img-box">
+                <img src="./img/pic2.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis velit sequi culpa.</p>
+            </div>
+            <div class="img-box">
+                <img src="./img/pic3.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis velit sequi culpa.</p>
+            </div>
+            <div class="img-box">
+                <img src="./img/pic4.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis velit sequi culpa.</p>
+            </div>
+        </div>
+        <button class="btn2 mt-10">View All Blogs</button>
+    </section>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const menu_btn = document.querySelector('.hamburger');
+        const nav = document.querySelector('#navbar');
+        const mobile_menu = document.querySelector('.mobile-nav');
+
+        menu_btn.addEventListener('click', function () {
+            menu_btn.classList.toggle('is-active');
+            mobile_menu.classList.toggle('is-active');
+            nav.classList.toggle('is-active')
+            if(menu_btn.classList.contains('is-active')){
+                document.body.style.overflow = 'hidden';
+            }
+            else{
+                document.body.style.overflow = 'auto';
+            }
+        });
+    });
+
+
+</script>
+
+</html>
